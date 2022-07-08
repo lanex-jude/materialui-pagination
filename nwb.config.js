@@ -5,7 +5,9 @@ module.exports = {
     umd: {
       global: 'materialui-pagination',
       externals: {
-        react: 'React'
+        // Don't bundle react or react-dom
+        'react': 'React',
+        'react-dom': 'ReactDOM'
       }
     }
   }
