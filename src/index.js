@@ -55,6 +55,9 @@ class Pagination extends React.Component {
         this.renderRowsPerPage = this.renderRowsPerPage.bind(this);
         this.renderRowRange = this.renderRowRange.bind(this);
 
+        this.selectRowsPerPage = this.selectRowsPerPage.bind(this);
+        this.selectPageNumber = this.selectPageNumber.bind(this);
+
         this.numberOfPages = this.numberOfPages.bind(this);
 
         this.incrementPage = this.incrementPage.bind(this);
