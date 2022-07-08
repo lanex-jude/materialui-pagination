@@ -23,13 +23,13 @@
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "15.x",
-    "react-dom": "15.x"
+    "react": "16.x",
+    "react-dom": "16.x"
   },
   "devDependencies": {
     "nwb": "0.15.x",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "author": "",
   "homepage": "https://github.com/franciskim722/materialui-pagination#readme",
