@@ -66,6 +66,7 @@ class Pagination extends React.Component {
 
 
     selectRowsPerPage(event, index, value){
+      event.preventDefault();
       const updatedState =  Object.assign({}, this.props);
       updatedState.numberOfRows = parseInt(value);
       if( updatedState.numberOfRows * this.props.page > this.props.total ) {
@@ -77,6 +78,7 @@ class Pagination extends React.Component {
     }
 
     selectPageNumber(event, index, value){
+      event.preventDefault();
       const updatedState =  Object.assign({}, this.props);
       updatedState.page = parseInt(value);
       this.props.updateRows(updatedState);
