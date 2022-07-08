@@ -66,7 +66,7 @@ class Pagination extends React.Component {
 
 
     selectRowsPerPage(event, index, value){
-      event.preventDefault();
+      event.persist();
       const updatedState =  Object.assign({}, this.props);
       updatedState.numberOfRows = parseInt(value);
       if( updatedState.numberOfRows * this.props.page > this.props.total ) {
@@ -78,7 +78,7 @@ class Pagination extends React.Component {
     }
 
     selectPageNumber(event, index, value){
-      event.preventDefault();
+      event.persist();
       const updatedState =  Object.assign({}, this.props);
       updatedState.page = parseInt(value);
       this.props.updateRows(updatedState);
@@ -139,7 +139,7 @@ class Pagination extends React.Component {
               <SelectField
                   style={styles.paginationSelect}
                   value={this.props.page}
-                  onChange={() => this.selectPageNumber()}
+                  onChange={this.selectPageNumber}
               >
                 {this.props.total === 1 ? null : this.numberOfPages()}
               </SelectField>
@@ -152,7 +152,7 @@ class Pagination extends React.Component {
               <SelectField
               style={styles.paginationSelect}
               value={this.props.numberOfRows}
-              onChange={() => this.selectRowsPerPage()}
+              onChange={this.selectRowsPerPage}
               >
                 {this.renderRowsPerPage()}
               </SelectField>

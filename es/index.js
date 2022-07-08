@@ -152,7 +152,7 @@ var Pagination = function (_React$Component) {
           {
             style: styles.paginationSelect,
             value: this.props.page,
-            onChange: () => this.selectPageNumber()
+            onChange: this.selectPageNumber
           },
           this.props.total === 1 ? null : this.numberOfPages()
         )
@@ -170,7 +170,7 @@ var Pagination = function (_React$Component) {
           {
             style: styles.paginationSelect,
             value: this.props.numberOfRows,
-            onChange: () => this.selectRowsPerPage()
+            onChange: this.selectRowsPerPage
           },
           this.renderRowsPerPage()
         )
