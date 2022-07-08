@@ -76,7 +76,6 @@ var Pagination = function (_React$Component) {
   }
 
   Pagination.prototype.selectRowsPerPage = function selectRowsPerPage(event, index, value) {
-    event.persist();
     var updatedState = Object.assign({}, this.props);
     updatedState.numberOfRows = parseInt(value);
     if (updatedState.numberOfRows * this.props.page > this.props.total) {
@@ -89,7 +88,6 @@ var Pagination = function (_React$Component) {
   };
 
   Pagination.prototype.selectPageNumber = function selectPageNumber(event, index, value) {
-    event.persist();
     var updatedState = Object.assign({}, this.props);
     updatedState.page = parseInt(value);
     this.props.updateRows(updatedState);
