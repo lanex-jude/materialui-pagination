@@ -139,7 +139,7 @@ class Pagination extends React.Component {
               <SelectField
                   style={styles.paginationSelect}
                   value={this.props.page}
-                  onChange={this.selectPageNumber}
+                  onChange={() => this.selectPageNumber()}
               >
                 {this.props.total === 1 ? null : this.numberOfPages()}
               </SelectField>
@@ -152,7 +152,7 @@ class Pagination extends React.Component {
               <SelectField
               style={styles.paginationSelect}
               value={this.props.numberOfRows}
-              onChange={this.selectRowsPerPage}
+              onChange={() => this.selectRowsPerPage()}
               >
                 {this.renderRowsPerPage()}
               </SelectField>
