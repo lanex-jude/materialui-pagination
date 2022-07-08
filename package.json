@@ -20,16 +20,16 @@
   },
   "dependencies": {
     "material-ui": "^0.19.0",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.6.0"
   },
   "peerDependencies": {
-    "react": "^15.3.0 || ^16.8.0",
-    "react-dom": "^15.3.0 || ^16.8.0"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "nwb": "0.15.x",
-    "react": "^15.3.0 || ^16.8.0",
-    "react-dom": "^15.3.0 || ^16.8.0"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "author": "",
   "homepage": "https://github.com/franciskim722/materialui-pagination#readme",
